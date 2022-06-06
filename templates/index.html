@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Document</title>
+<style>
+body {
+  background-image: url('blue.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+
+<body>
+<h1><b><font color="black"><center>HOUSE  RENT  PREDICTION</center></font></b></h1>
+
+<marquee direction="left"><font color="white"><i>
+All tenants!!!,happy hunting. Get in touch with us to let us know how else we can help!
+</i></font></marquee>
+
+<h3><font color="yellow">Enter the required details to predict the rent</font>
+<img align="right" src="pune.jpg" width="600px" height="400px"><br><br>
+<img align="right" src="rent.jpg" width="700px" height="500px"></h3>
+
+<form action = '/predict' method="post"><font color="yellow">
+<h3>Location</h3>
+<select name="location_encoded" id="location_encoded" required="required">
+                <option value="Adinath Colony">Adinath Colony</option>
+                <option value="Akurdi">Akurdi</option>
+                <option value="Alandi">Alandi</option>
+                <option value="Alandi Road">Alandi Road</option>
+    		<option value="Amanora Victory Tower">Amanora Victory Tower</option>
+		<option value="Ambedkar Nagar">Ambedkar Nagar</option>
+</select><br><br>
+
+<h3>Area</h3>
+<input id="area" name="area" type="text"><br><br>
+
+<h3>Available For:</h3>
+<select name="avalable_for" id="avalable_for" required="required">
+                <option value="all">All</option>
+                <option value="family">Family</option>
+                <option value="bachelors(men)">Bachelors(Men)</option>
+                <option value="bachelors(women)">Bachelors(Women)</option>
+</select><br><br>
+
+<h3>Total Rooms</h3>
+<input id="room" name="room" type="text"><br><br>
+
+<h3>Gated Community</h3>
+<input type="radio" id="yes" name="gate_community" value="Yes">
+<label for="Yes">YES</label><br>
+<input type="radio" id="no" name="gate_community" value="No">
+<label for="No">NO</label><br><br>
+
+<h3>Parking(enter between 1 to 9)</h3>
+<input id="parking" name="parking" type="text"><br><br>
+
+<h3>Furnishing details</h3>
+<select name="furnishing" id="furnishing" required="required">
+                <option value="furnished">furnished</option>
+                <option value="Unfurnished">Semifurnished</option>
+                <option value="Semifurnished">Unfurnished</option>
+</select><br><br>
+
+<h3>Floor type</h3>
+<select name="floor_type" id="floor_type" required="required">
+                <option value="vitrified">vitrified</option>
+                <option value="ceramic">ceramic</option>
+                <option value="granite">granite</option>
+</select><br><br>
+
+
+<h3>Property age</h3>
+<select name="propertyage" id="propertyage" required="required">
+                <option value="1 to 5 Year Old">1 to 5 Year Old</option>
+                <option value="5 to 10 Year Old">5 to 10 Year Old</option>
+                <option value="10+ Year Old">10+ Year Old</option>
+</select><br><br>
+
+<h3>Maintanence amount</h3>
+<input id="maintanence_amt" name="maintanence_amt" type="text"><br><br>
+
+<h3>Corner house is fine?</h3>
+<select name="corner_pro" id="corner_pro" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+</select><br><br>
+
+<h3>Wheel chair adption</h3>
+<select name="wheelchairadption" id="wheelchairadption" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+</select><br><br>
+
+<h3>Pet facility</h3>
+<select name="petfacility" id="petfacility" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+</select><br><br>
+
+<h3>Light bill</h3>
+<input id="lightbill" name="lightbill" type="text"><br><br>
+
+<h3>Power backup</h3>
+<select name="powerbackup" id="powerbackup" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+</select><br><br>
+
+<h3>Which floor do you prefer(enter between 1 to 9)</h3>
+<input id="floor_number" name="floor_number" type="text"><br><br>
+
+<h3>Aggrement duration(enter between 1 to 24 months)</h3>
+<input id="aggDur" name="aggDur" type="text"><br><br>
+
+<h3>Notice duration(enter between 1 to 6 months)</h3>
+<input id="noticeDur" name="noticeDur" type="text"><br><br>
+
+<h3>do u require other facilities</h3>
+<input id="others" name="others" type="text"><br><br>
+
+<h3>Broker amount if included(5k to 20k)</h3>
+<input id="brok_amt" name="brok_amt" type="text"><br><br>
+
+<h3>Advance amount(50k to 1lakh)</h3>
+<input id="deposit_amt" name="deposit_amt" type="text"><br><br>
+
+<input type="submit" value="Predict the Rent">
+</font></form>
+
+</body>
+</html>
